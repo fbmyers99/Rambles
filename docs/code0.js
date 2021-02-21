@@ -303,7 +303,8 @@ gdjs.FirstCode.GDBarrierObjects2.length = k;}if (gdjs.FirstCode.condition0IsTrue
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("Barrier"), gdjs.FirstCode.GDBarrierObjects2);
+gdjs.copyArray(gdjs.FirstCode.GDBarrierObjects1, gdjs.FirstCode.GDBarrierObjects2);
+
 
 gdjs.FirstCode.condition0IsTrue_0.val = false;
 {
@@ -373,7 +374,7 @@ gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.FirstCode.GDPlayerObjects
 }
 
 
-};gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.FirstCode.GDPlayerObjects1});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDCheckpointObjects1Objects = Hashtable.newFrom({"Checkpoint": gdjs.FirstCode.GDCheckpointObjects1});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDStatsTabObjects2Objects = Hashtable.newFrom({"StatsTab": gdjs.FirstCode.GDStatsTabObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDStatsTabObjects2Objects = Hashtable.newFrom({"StatsTab": gdjs.FirstCode.GDStatsTabObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDStatsTabObjects2Objects = Hashtable.newFrom({"StatsTab": gdjs.FirstCode.GDStatsTabObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDDeathCountObjects2Objects = Hashtable.newFrom({"DeathCount": gdjs.FirstCode.GDDeathCountObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDFoodCountObjects2Objects = Hashtable.newFrom({"FoodCount": gdjs.FirstCode.GDFoodCountObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDDrinksCountObjects2Objects = Hashtable.newFrom({"DrinksCount": gdjs.FirstCode.GDDrinksCountObjects2});gdjs.FirstCode.eventsList3 = function(runtimeScene) {
+};gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.FirstCode.GDPlayerObjects1});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDBoatObjects1Objects = Hashtable.newFrom({"Boat": gdjs.FirstCode.GDBoatObjects1});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.FirstCode.GDPlayerObjects1});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDCheckpointObjects1Objects = Hashtable.newFrom({"Checkpoint": gdjs.FirstCode.GDCheckpointObjects1});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDStatsTabObjects2Objects = Hashtable.newFrom({"StatsTab": gdjs.FirstCode.GDStatsTabObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDStatsTabObjects2Objects = Hashtable.newFrom({"StatsTab": gdjs.FirstCode.GDStatsTabObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDStatsTabObjects2Objects = Hashtable.newFrom({"StatsTab": gdjs.FirstCode.GDStatsTabObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDDeathCountObjects2Objects = Hashtable.newFrom({"DeathCount": gdjs.FirstCode.GDDeathCountObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDFoodCountObjects2Objects = Hashtable.newFrom({"FoodCount": gdjs.FirstCode.GDFoodCountObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDDrinksCountObjects2Objects = Hashtable.newFrom({"DrinksCount": gdjs.FirstCode.GDDrinksCountObjects2});gdjs.FirstCode.eventsList3 = function(runtimeScene) {
 
 {
 
@@ -789,7 +790,7 @@ gdjs.FirstCode.condition1IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.
 }if ( gdjs.FirstCode.condition1IsTrue_0.val ) {
 {
 {gdjs.FirstCode.conditionTrue_1 = gdjs.FirstCode.condition2IsTrue_0;
-gdjs.FirstCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8862508);
+gdjs.FirstCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8601756);
 }
 }}
 }
@@ -872,7 +873,7 @@ gdjs.FirstCode.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonPressed
 }if ( gdjs.FirstCode.condition1IsTrue_0.val ) {
 {
 {gdjs.FirstCode.conditionTrue_1 = gdjs.FirstCode.condition2IsTrue_0;
-gdjs.FirstCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9503436);
+gdjs.FirstCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(7947068);
 }
 }}
 }
@@ -1154,22 +1155,6 @@ gdjs.FirstCode.eventsList11(runtimeScene);} //End of subevents
 
 
 };gdjs.FirstCode.eventsList13 = function(runtimeScene) {
-
-{
-
-
-gdjs.FirstCode.condition0IsTrue_0.val = false;
-{
-gdjs.FirstCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
-}if (gdjs.FirstCode.condition0IsTrue_0.val) {
-gdjs.copyArray(runtimeScene.getObjects("Barrier"), gdjs.FirstCode.GDBarrierObjects2);
-{for(var i = 0, len = gdjs.FirstCode.GDBarrierObjects2.length ;i < len;++i) {
-    gdjs.FirstCode.GDBarrierObjects2[i].hide();
-}
-}}
-
-}
-
 
 {
 
@@ -1882,7 +1867,7 @@ if (gdjs.FirstCode.condition1IsTrue_0.val) {
 {runtimeScene.getGame().getVariables().get("Deaths").setNumber(0);
 }{runtimeScene.getGame().getVariables().get("Food").setNumber(0);
 }{runtimeScene.getGame().getVariables().get("Drink").setNumber(0);
-}{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "First", true);
+}{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "First", false);
 }}
 
 }
@@ -1898,6 +1883,7 @@ gdjs.FirstCode.condition0IsTrue_0.val = false;
 gdjs.FirstCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 }if (gdjs.FirstCode.condition0IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("BackToStart"), gdjs.FirstCode.GDBackToStartObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Barrier"), gdjs.FirstCode.GDBarrierObjects1);
 gdjs.copyArray(runtimeScene.getObjects("Close"), gdjs.FirstCode.GDCloseObjects1);
 gdjs.copyArray(runtimeScene.getObjects("DeathCount"), gdjs.FirstCode.GDDeathCountObjects1);
 gdjs.copyArray(runtimeScene.getObjects("DemoEnd"), gdjs.FirstCode.GDDemoEndObjects1);
@@ -1942,6 +1928,9 @@ gdjs.copyArray(runtimeScene.getObjects("StatsBoard"), gdjs.FirstCode.GDStatsBoar
 }{for(var i = 0, len = gdjs.FirstCode.GDBackToStartObjects1.length ;i < len;++i) {
     gdjs.FirstCode.GDBackToStartObjects1[i].hide();
 }
+}{for(var i = 0, len = gdjs.FirstCode.GDBarrierObjects1.length ;i < len;++i) {
+    gdjs.FirstCode.GDBarrierObjects1[i].hide();
+}
 }
 { //Subevents
 gdjs.FirstCode.eventsList2(runtimeScene);} //End of subevents
@@ -1953,6 +1942,23 @@ gdjs.FirstCode.eventsList2(runtimeScene);} //End of subevents
 {
 
 
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Boat"), gdjs.FirstCode.GDBoatObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.FirstCode.GDPlayerObjects1);
+
+gdjs.FirstCode.condition0IsTrue_0.val = false;
+{
+gdjs.FirstCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDPlayerObjects1Objects, gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDBoatObjects1Objects, false, runtimeScene, false);
+}if (gdjs.FirstCode.condition0IsTrue_0.val) {
+/* Reuse gdjs.FirstCode.GDBoatObjects1 */
+{runtimeScene.getVariables().get("CheckpointY").setNumber((( gdjs.FirstCode.GDBoatObjects1.length === 0 ) ? 0 :gdjs.FirstCode.GDBoatObjects1[0].getPointY("Center")));
+}{runtimeScene.getVariables().get("CheckpointX").setNumber(0);
+}}
 
 }
 
