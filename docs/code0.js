@@ -259,6 +259,10 @@ gdjs.FirstCode.GDBackToStartObjects1= [];
 gdjs.FirstCode.GDBackToStartObjects2= [];
 gdjs.FirstCode.GDBackToStartObjects3= [];
 gdjs.FirstCode.GDBackToStartObjects4= [];
+gdjs.FirstCode.GDCheckpointZoneObjects1= [];
+gdjs.FirstCode.GDCheckpointZoneObjects2= [];
+gdjs.FirstCode.GDCheckpointZoneObjects3= [];
+gdjs.FirstCode.GDCheckpointZoneObjects4= [];
 
 gdjs.FirstCode.conditionTrue_0 = {val:false};
 gdjs.FirstCode.condition0IsTrue_0 = {val:false};
@@ -374,7 +378,7 @@ gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.FirstCode.GDPlayerObjects
 }
 
 
-};gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.FirstCode.GDPlayerObjects1});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDBoatObjects1Objects = Hashtable.newFrom({"Boat": gdjs.FirstCode.GDBoatObjects1});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.FirstCode.GDPlayerObjects1});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDCheckpointObjects1Objects = Hashtable.newFrom({"Checkpoint": gdjs.FirstCode.GDCheckpointObjects1});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDStatsTabObjects2Objects = Hashtable.newFrom({"StatsTab": gdjs.FirstCode.GDStatsTabObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDStatsTabObjects2Objects = Hashtable.newFrom({"StatsTab": gdjs.FirstCode.GDStatsTabObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDStatsTabObjects2Objects = Hashtable.newFrom({"StatsTab": gdjs.FirstCode.GDStatsTabObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDDeathCountObjects2Objects = Hashtable.newFrom({"DeathCount": gdjs.FirstCode.GDDeathCountObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDFoodCountObjects2Objects = Hashtable.newFrom({"FoodCount": gdjs.FirstCode.GDFoodCountObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDDrinksCountObjects2Objects = Hashtable.newFrom({"DrinksCount": gdjs.FirstCode.GDDrinksCountObjects2});gdjs.FirstCode.eventsList3 = function(runtimeScene) {
+};gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.FirstCode.GDPlayerObjects1});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDBoatObjects1Objects = Hashtable.newFrom({"Boat": gdjs.FirstCode.GDBoatObjects1});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.FirstCode.GDPlayerObjects1});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDCheckpointZoneObjects1Objects = Hashtable.newFrom({"CheckpointZone": gdjs.FirstCode.GDCheckpointZoneObjects1});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDStatsTabObjects2Objects = Hashtable.newFrom({"StatsTab": gdjs.FirstCode.GDStatsTabObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDStatsTabObjects2Objects = Hashtable.newFrom({"StatsTab": gdjs.FirstCode.GDStatsTabObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDStatsTabObjects2Objects = Hashtable.newFrom({"StatsTab": gdjs.FirstCode.GDStatsTabObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDDeathCountObjects2Objects = Hashtable.newFrom({"DeathCount": gdjs.FirstCode.GDDeathCountObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDFoodCountObjects2Objects = Hashtable.newFrom({"FoodCount": gdjs.FirstCode.GDFoodCountObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDDrinksCountObjects2Objects = Hashtable.newFrom({"DrinksCount": gdjs.FirstCode.GDDrinksCountObjects2});gdjs.FirstCode.eventsList3 = function(runtimeScene) {
 
 {
 
@@ -1894,6 +1898,7 @@ gdjs.copyArray(runtimeScene.getObjects("BackToStart"), gdjs.FirstCode.GDBackToSt
 gdjs.copyArray(runtimeScene.getObjects("Barrier"), gdjs.FirstCode.GDBarrierObjects1);
 gdjs.copyArray(runtimeScene.getObjects("BoatLantern"), gdjs.FirstCode.GDBoatLanternObjects1);
 gdjs.copyArray(runtimeScene.getObjects("BoatLanternTop"), gdjs.FirstCode.GDBoatLanternTopObjects1);
+gdjs.copyArray(runtimeScene.getObjects("CheckpointZone"), gdjs.FirstCode.GDCheckpointZoneObjects1);
 gdjs.copyArray(runtimeScene.getObjects("Close"), gdjs.FirstCode.GDCloseObjects1);
 gdjs.copyArray(runtimeScene.getObjects("DeathCount"), gdjs.FirstCode.GDDeathCountObjects1);
 gdjs.copyArray(runtimeScene.getObjects("DemoEnd"), gdjs.FirstCode.GDDemoEndObjects1);
@@ -1947,6 +1952,9 @@ gdjs.copyArray(runtimeScene.getObjects("StatsBoard"), gdjs.FirstCode.GDStatsBoar
 }{for(var i = 0, len = gdjs.FirstCode.GDBoatLanternTopObjects1.length ;i < len;++i) {
     gdjs.FirstCode.GDBoatLanternTopObjects1[i].hide();
 }
+}{for(var i = 0, len = gdjs.FirstCode.GDCheckpointZoneObjects1.length ;i < len;++i) {
+    gdjs.FirstCode.GDCheckpointZoneObjects1[i].hide();
+}
 }
 { //Subevents
 gdjs.FirstCode.eventsList2(runtimeScene);} //End of subevents
@@ -1994,14 +2002,14 @@ gdjs.FirstCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisionTe
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("Checkpoint"), gdjs.FirstCode.GDCheckpointObjects1);
+gdjs.copyArray(runtimeScene.getObjects("CheckpointZone"), gdjs.FirstCode.GDCheckpointZoneObjects1);
 gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.FirstCode.GDPlayerObjects1);
 
 gdjs.FirstCode.condition0IsTrue_0.val = false;
 {
-gdjs.FirstCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDPlayerObjects1Objects, gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDCheckpointObjects1Objects, false, runtimeScene, false);
+gdjs.FirstCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDPlayerObjects1Objects, gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDCheckpointZoneObjects1Objects, false, runtimeScene, false);
 }if (gdjs.FirstCode.condition0IsTrue_0.val) {
-/* Reuse gdjs.FirstCode.GDCheckpointObjects1 */
+gdjs.copyArray(runtimeScene.getObjects("Checkpoint"), gdjs.FirstCode.GDCheckpointObjects1);
 {runtimeScene.getVariables().get("CheckpointX").setNumber((( gdjs.FirstCode.GDCheckpointObjects1.length === 0 ) ? 0 :gdjs.FirstCode.GDCheckpointObjects1[0].getPointX("")));
 }{runtimeScene.getVariables().get("CheckpointY").setNumber((( gdjs.FirstCode.GDCheckpointObjects1.length === 0 ) ? 0 :gdjs.FirstCode.GDCheckpointObjects1[0].getPointY("")));
 }{for(var i = 0, len = gdjs.FirstCode.GDCheckpointObjects1.length ;i < len;++i) {
@@ -2353,6 +2361,10 @@ gdjs.FirstCode.GDBackToStartObjects1.length = 0;
 gdjs.FirstCode.GDBackToStartObjects2.length = 0;
 gdjs.FirstCode.GDBackToStartObjects3.length = 0;
 gdjs.FirstCode.GDBackToStartObjects4.length = 0;
+gdjs.FirstCode.GDCheckpointZoneObjects1.length = 0;
+gdjs.FirstCode.GDCheckpointZoneObjects2.length = 0;
+gdjs.FirstCode.GDCheckpointZoneObjects3.length = 0;
+gdjs.FirstCode.GDCheckpointZoneObjects4.length = 0;
 
 gdjs.FirstCode.eventsList20(runtimeScene);
 return;
