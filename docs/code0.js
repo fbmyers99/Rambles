@@ -378,7 +378,29 @@ gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.FirstCode.GDPlayerObjects
 }
 
 
-};gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.FirstCode.GDPlayerObjects1});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDBoatObjects1Objects = Hashtable.newFrom({"Boat": gdjs.FirstCode.GDBoatObjects1});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.FirstCode.GDPlayerObjects1});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDCheckpointZoneObjects1Objects = Hashtable.newFrom({"CheckpointZone": gdjs.FirstCode.GDCheckpointZoneObjects1});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDStatsTabObjects2Objects = Hashtable.newFrom({"StatsTab": gdjs.FirstCode.GDStatsTabObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDStatsTabObjects2Objects = Hashtable.newFrom({"StatsTab": gdjs.FirstCode.GDStatsTabObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDStatsTabObjects2Objects = Hashtable.newFrom({"StatsTab": gdjs.FirstCode.GDStatsTabObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDDeathCountObjects2Objects = Hashtable.newFrom({"DeathCount": gdjs.FirstCode.GDDeathCountObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDFoodCountObjects2Objects = Hashtable.newFrom({"FoodCount": gdjs.FirstCode.GDFoodCountObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDDrinksCountObjects2Objects = Hashtable.newFrom({"DrinksCount": gdjs.FirstCode.GDDrinksCountObjects2});gdjs.FirstCode.eventsList3 = function(runtimeScene) {
+};gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.FirstCode.GDPlayerObjects1});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDBoatObjects1Objects = Hashtable.newFrom({"Boat": gdjs.FirstCode.GDBoatObjects1});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.FirstCode.GDPlayerObjects1});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDCheckpointZoneObjects1Objects = Hashtable.newFrom({"CheckpointZone": gdjs.FirstCode.GDCheckpointZoneObjects1});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDCheckpointObjects1Objects = Hashtable.newFrom({"Checkpoint": gdjs.FirstCode.GDCheckpointObjects1});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDCheckpointZoneObjects1Objects = Hashtable.newFrom({"CheckpointZone": gdjs.FirstCode.GDCheckpointZoneObjects1});gdjs.FirstCode.eventsList3 = function(runtimeScene) {
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Checkpoint"), gdjs.FirstCode.GDCheckpointObjects1);
+/* Reuse gdjs.FirstCode.GDCheckpointZoneObjects1 */
+
+gdjs.FirstCode.condition0IsTrue_0.val = false;
+{
+gdjs.FirstCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDCheckpointObjects1Objects, gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDCheckpointZoneObjects1Objects, false, runtimeScene, false);
+}if (gdjs.FirstCode.condition0IsTrue_0.val) {
+/* Reuse gdjs.FirstCode.GDCheckpointObjects1 */
+{for(var i = 0, len = gdjs.FirstCode.GDCheckpointObjects1.length ;i < len;++i) {
+    gdjs.FirstCode.GDCheckpointObjects1[i].setAnimationName("Passed");
+}
+}{runtimeScene.getVariables().get("CheckpointX").setNumber((( gdjs.FirstCode.GDCheckpointObjects1.length === 0 ) ? 0 :gdjs.FirstCode.GDCheckpointObjects1[0].getPointX("")));
+}{runtimeScene.getVariables().get("CheckpointY").setNumber((( gdjs.FirstCode.GDCheckpointObjects1.length === 0 ) ? 0 :gdjs.FirstCode.GDCheckpointObjects1[0].getPointY("")));
+}}
+
+}
+
+
+};gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDStatsTabObjects2Objects = Hashtable.newFrom({"StatsTab": gdjs.FirstCode.GDStatsTabObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDStatsTabObjects2Objects = Hashtable.newFrom({"StatsTab": gdjs.FirstCode.GDStatsTabObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDStatsTabObjects2Objects = Hashtable.newFrom({"StatsTab": gdjs.FirstCode.GDStatsTabObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDDeathCountObjects2Objects = Hashtable.newFrom({"DeathCount": gdjs.FirstCode.GDDeathCountObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDFoodCountObjects2Objects = Hashtable.newFrom({"FoodCount": gdjs.FirstCode.GDFoodCountObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDDrinksCountObjects2Objects = Hashtable.newFrom({"DrinksCount": gdjs.FirstCode.GDDrinksCountObjects2});gdjs.FirstCode.eventsList4 = function(runtimeScene) {
 
 {
 
@@ -435,7 +457,7 @@ if (gdjs.FirstCode.condition2IsTrue_0.val) {
 }
 
 
-};gdjs.FirstCode.eventsList4 = function(runtimeScene) {
+};gdjs.FirstCode.eventsList5 = function(runtimeScene) {
 
 {
 
@@ -459,13 +481,13 @@ gdjs.FirstCode.condition2IsTrue_0.val = gdjs.evtTools.object.pickAllObjects(runt
 if (gdjs.FirstCode.condition2IsTrue_0.val) {
 
 { //Subevents
-gdjs.FirstCode.eventsList3(runtimeScene);} //End of subevents
+gdjs.FirstCode.eventsList4(runtimeScene);} //End of subevents
 }
 
 }
 
 
-};gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDCloseObjects2Objects = Hashtable.newFrom({"Close": gdjs.FirstCode.GDCloseObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDCloseObjects2Objects = Hashtable.newFrom({"Close": gdjs.FirstCode.GDCloseObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDCloseObjects1Objects = Hashtable.newFrom({"Close": gdjs.FirstCode.GDCloseObjects1});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDCloseObjects1Objects = Hashtable.newFrom({"Close": gdjs.FirstCode.GDCloseObjects1});gdjs.FirstCode.eventsList5 = function(runtimeScene) {
+};gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDCloseObjects2Objects = Hashtable.newFrom({"Close": gdjs.FirstCode.GDCloseObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDCloseObjects2Objects = Hashtable.newFrom({"Close": gdjs.FirstCode.GDCloseObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDCloseObjects1Objects = Hashtable.newFrom({"Close": gdjs.FirstCode.GDCloseObjects1});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDCloseObjects1Objects = Hashtable.newFrom({"Close": gdjs.FirstCode.GDCloseObjects1});gdjs.FirstCode.eventsList6 = function(runtimeScene) {
 
 {
 
@@ -509,7 +531,7 @@ gdjs.copyArray(runtimeScene.getObjects("StatsTab"), gdjs.FirstCode.GDStatsTabObj
 }
 
 
-};gdjs.FirstCode.eventsList6 = function(runtimeScene) {
+};gdjs.FirstCode.eventsList7 = function(runtimeScene) {
 
 {
 
@@ -527,13 +549,13 @@ for(var i = 0, k = 0, l = gdjs.FirstCode.GDCloseObjects1.length;i<l;++i) {
 gdjs.FirstCode.GDCloseObjects1.length = k;}if (gdjs.FirstCode.condition0IsTrue_0.val) {
 
 { //Subevents
-gdjs.FirstCode.eventsList5(runtimeScene);} //End of subevents
+gdjs.FirstCode.eventsList6(runtimeScene);} //End of subevents
 }
 
 }
 
 
-};gdjs.FirstCode.eventsList7 = function(runtimeScene) {
+};gdjs.FirstCode.eventsList8 = function(runtimeScene) {
 
 {
 
@@ -617,7 +639,7 @@ gdjs.copyArray(runtimeScene.getObjects("StatsBoard"), gdjs.FirstCode.GDStatsBoar
 }
 }
 { //Subevents
-gdjs.FirstCode.eventsList4(runtimeScene);} //End of subevents
+gdjs.FirstCode.eventsList5(runtimeScene);} //End of subevents
 }
 
 }
@@ -667,13 +689,13 @@ gdjs.FirstCode.condition0IsTrue_0.val = gdjs.evtTools.object.pickAllObjects(runt
 }if (gdjs.FirstCode.condition0IsTrue_0.val) {
 
 { //Subevents
-gdjs.FirstCode.eventsList6(runtimeScene);} //End of subevents
+gdjs.FirstCode.eventsList7(runtimeScene);} //End of subevents
 }
 
 }
 
 
-};gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDPlayObjects2Objects = Hashtable.newFrom({"Play": gdjs.FirstCode.GDPlayObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDOptionsObjects2Objects = Hashtable.newFrom({"Options": gdjs.FirstCode.GDOptionsObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDQuitObjects2Objects = Hashtable.newFrom({"Quit": gdjs.FirstCode.GDQuitObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDPlayObjects2Objects = Hashtable.newFrom({"Play": gdjs.FirstCode.GDPlayObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDOptionsObjects2Objects = Hashtable.newFrom({"Options": gdjs.FirstCode.GDOptionsObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDQuitObjects2Objects = Hashtable.newFrom({"Quit": gdjs.FirstCode.GDQuitObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDPlayObjects2Objects = Hashtable.newFrom({"Play": gdjs.FirstCode.GDPlayObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDPlayObjects2Objects = Hashtable.newFrom({"Play": gdjs.FirstCode.GDPlayObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDOptionsObjects2Objects = Hashtable.newFrom({"Options": gdjs.FirstCode.GDOptionsObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDQuitObjects1Objects = Hashtable.newFrom({"Quit": gdjs.FirstCode.GDQuitObjects1});gdjs.FirstCode.eventsList8 = function(runtimeScene) {
+};gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDPlayObjects2Objects = Hashtable.newFrom({"Play": gdjs.FirstCode.GDPlayObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDOptionsObjects2Objects = Hashtable.newFrom({"Options": gdjs.FirstCode.GDOptionsObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDQuitObjects2Objects = Hashtable.newFrom({"Quit": gdjs.FirstCode.GDQuitObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDPlayObjects2Objects = Hashtable.newFrom({"Play": gdjs.FirstCode.GDPlayObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDOptionsObjects2Objects = Hashtable.newFrom({"Options": gdjs.FirstCode.GDOptionsObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDQuitObjects2Objects = Hashtable.newFrom({"Quit": gdjs.FirstCode.GDQuitObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDPlayObjects2Objects = Hashtable.newFrom({"Play": gdjs.FirstCode.GDPlayObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDPlayObjects2Objects = Hashtable.newFrom({"Play": gdjs.FirstCode.GDPlayObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDOptionsObjects2Objects = Hashtable.newFrom({"Options": gdjs.FirstCode.GDOptionsObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDQuitObjects1Objects = Hashtable.newFrom({"Quit": gdjs.FirstCode.GDQuitObjects1});gdjs.FirstCode.eventsList9 = function(runtimeScene) {
 
 {
 
@@ -896,7 +918,7 @@ if (gdjs.FirstCode.condition2IsTrue_0.val) {
 }
 
 
-};gdjs.FirstCode.eventsList9 = function(runtimeScene) {
+};gdjs.FirstCode.eventsList10 = function(runtimeScene) {
 
 {
 
@@ -1055,7 +1077,7 @@ gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.FirstCode.GDPlayerObjects
 }
 
 
-};gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDBarrierObjects2Objects = Hashtable.newFrom({"Barrier": gdjs.FirstCode.GDBarrierObjects2});gdjs.FirstCode.eventsList10 = function(runtimeScene) {
+};gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDBarrierObjects2Objects = Hashtable.newFrom({"Barrier": gdjs.FirstCode.GDBarrierObjects2});gdjs.FirstCode.eventsList11 = function(runtimeScene) {
 
 {
 
@@ -1106,7 +1128,7 @@ gdjs.copyArray(runtimeScene.getObjects("Boat"), gdjs.FirstCode.GDBoatObjects2);
 }
 
 
-};gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDPierObjects1Objects = Hashtable.newFrom({"Pier": gdjs.FirstCode.GDPierObjects1});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDBoatObjects1Objects = Hashtable.newFrom({"Boat": gdjs.FirstCode.GDBoatObjects1});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDPierObjects1Objects = Hashtable.newFrom({"Pier": gdjs.FirstCode.GDPierObjects1});gdjs.FirstCode.eventsList11 = function(runtimeScene) {
+};gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDPierObjects1Objects = Hashtable.newFrom({"Pier": gdjs.FirstCode.GDPierObjects1});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDBoatObjects1Objects = Hashtable.newFrom({"Boat": gdjs.FirstCode.GDBoatObjects1});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDPierObjects1Objects = Hashtable.newFrom({"Pier": gdjs.FirstCode.GDPierObjects1});gdjs.FirstCode.eventsList12 = function(runtimeScene) {
 
 {
 
@@ -1130,7 +1152,7 @@ gdjs.FirstCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisionTe
 }
 
 
-};gdjs.FirstCode.eventsList12 = function(runtimeScene) {
+};gdjs.FirstCode.eventsList13 = function(runtimeScene) {
 
 {
 
@@ -1160,13 +1182,13 @@ gdjs.FirstCode.GDPierObjects1.length = k;}}
 if (gdjs.FirstCode.condition1IsTrue_0.val) {
 
 { //Subevents
-gdjs.FirstCode.eventsList11(runtimeScene);} //End of subevents
+gdjs.FirstCode.eventsList12(runtimeScene);} //End of subevents
 }
 
 }
 
 
-};gdjs.FirstCode.eventsList13 = function(runtimeScene) {
+};gdjs.FirstCode.eventsList14 = function(runtimeScene) {
 
 {
 
@@ -1210,7 +1232,7 @@ gdjs.FirstCode.condition0IsTrue_0.val = gdjs.evtTools.object.pickAllObjects(runt
 }if (gdjs.FirstCode.condition0IsTrue_0.val) {
 
 { //Subevents
-gdjs.FirstCode.eventsList10(runtimeScene);} //End of subevents
+gdjs.FirstCode.eventsList11(runtimeScene);} //End of subevents
 }
 
 }
@@ -1226,13 +1248,13 @@ gdjs.FirstCode.condition0IsTrue_0.val = gdjs.evtTools.object.pickAllObjects(runt
 }if (gdjs.FirstCode.condition0IsTrue_0.val) {
 
 { //Subevents
-gdjs.FirstCode.eventsList12(runtimeScene);} //End of subevents
+gdjs.FirstCode.eventsList13(runtimeScene);} //End of subevents
 }
 
 }
 
 
-};gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDMovingObjects2Objects = Hashtable.newFrom({"Moving": gdjs.FirstCode.GDMovingObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDLeftObjects2Objects = Hashtable.newFrom({"Left": gdjs.FirstCode.GDLeftObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDMovingObjects2Objects = Hashtable.newFrom({"Moving": gdjs.FirstCode.GDMovingObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDRightObjects2Objects = Hashtable.newFrom({"Right": gdjs.FirstCode.GDRightObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDMovingObjects2Objects = Hashtable.newFrom({"Moving": gdjs.FirstCode.GDMovingObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDUpObjects2Objects = Hashtable.newFrom({"Up": gdjs.FirstCode.GDUpObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDMovingObjects1Objects = Hashtable.newFrom({"Moving": gdjs.FirstCode.GDMovingObjects1});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDDownObjects1Objects = Hashtable.newFrom({"Down": gdjs.FirstCode.GDDownObjects1});gdjs.FirstCode.eventsList14 = function(runtimeScene) {
+};gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDMovingObjects2Objects = Hashtable.newFrom({"Moving": gdjs.FirstCode.GDMovingObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDLeftObjects2Objects = Hashtable.newFrom({"Left": gdjs.FirstCode.GDLeftObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDMovingObjects2Objects = Hashtable.newFrom({"Moving": gdjs.FirstCode.GDMovingObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDRightObjects2Objects = Hashtable.newFrom({"Right": gdjs.FirstCode.GDRightObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDMovingObjects2Objects = Hashtable.newFrom({"Moving": gdjs.FirstCode.GDMovingObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDUpObjects2Objects = Hashtable.newFrom({"Up": gdjs.FirstCode.GDUpObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDMovingObjects1Objects = Hashtable.newFrom({"Moving": gdjs.FirstCode.GDMovingObjects1});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDDownObjects1Objects = Hashtable.newFrom({"Down": gdjs.FirstCode.GDDownObjects1});gdjs.FirstCode.eventsList15 = function(runtimeScene) {
 
 {
 
@@ -1438,7 +1460,7 @@ gdjs.FirstCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisionTe
 }
 
 
-};gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDPlayerObjects2Objects = Hashtable.newFrom({"Player": gdjs.FirstCode.GDPlayerObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDWaterSpeedChangeObjects2Objects = Hashtable.newFrom({"WaterSpeedChange": gdjs.FirstCode.GDWaterSpeedChangeObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDPlayerObjects2Objects = Hashtable.newFrom({"Player": gdjs.FirstCode.GDPlayerObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDWaterSpeedChangeObjects2Objects = Hashtable.newFrom({"WaterSpeedChange": gdjs.FirstCode.GDWaterSpeedChangeObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.FirstCode.GDPlayerObjects1});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDWaterEdgeObjects1Objects = Hashtable.newFrom({"WaterEdge": gdjs.FirstCode.GDWaterEdgeObjects1});gdjs.FirstCode.eventsList15 = function(runtimeScene) {
+};gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDPlayerObjects2Objects = Hashtable.newFrom({"Player": gdjs.FirstCode.GDPlayerObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDWaterSpeedChangeObjects2Objects = Hashtable.newFrom({"WaterSpeedChange": gdjs.FirstCode.GDWaterSpeedChangeObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDPlayerObjects2Objects = Hashtable.newFrom({"Player": gdjs.FirstCode.GDPlayerObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDWaterSpeedChangeObjects2Objects = Hashtable.newFrom({"WaterSpeedChange": gdjs.FirstCode.GDWaterSpeedChangeObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.FirstCode.GDPlayerObjects1});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDWaterEdgeObjects1Objects = Hashtable.newFrom({"WaterEdge": gdjs.FirstCode.GDWaterEdgeObjects1});gdjs.FirstCode.eventsList16 = function(runtimeScene) {
 
 {
 
@@ -1526,7 +1548,7 @@ gdjs.FirstCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisionTe
 }
 
 
-};gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDPlayerObjects2Objects = Hashtable.newFrom({"Player": gdjs.FirstCode.GDPlayerObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDKeyObjects2Objects = Hashtable.newFrom({"Key": gdjs.FirstCode.GDKeyObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDPlayerObjects2Objects = Hashtable.newFrom({"Player": gdjs.FirstCode.GDPlayerObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDFoodCollectableObjects2Objects = Hashtable.newFrom({"FoodCollectable": gdjs.FirstCode.GDFoodCollectableObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.FirstCode.GDPlayerObjects1});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDDrinkCollectableObjects1Objects = Hashtable.newFrom({"DrinkCollectable": gdjs.FirstCode.GDDrinkCollectableObjects1});gdjs.FirstCode.eventsList16 = function(runtimeScene) {
+};gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDPlayerObjects2Objects = Hashtable.newFrom({"Player": gdjs.FirstCode.GDPlayerObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDKeyObjects2Objects = Hashtable.newFrom({"Key": gdjs.FirstCode.GDKeyObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDPlayerObjects2Objects = Hashtable.newFrom({"Player": gdjs.FirstCode.GDPlayerObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDFoodCollectableObjects2Objects = Hashtable.newFrom({"FoodCollectable": gdjs.FirstCode.GDFoodCollectableObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.FirstCode.GDPlayerObjects1});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDDrinkCollectableObjects1Objects = Hashtable.newFrom({"DrinkCollectable": gdjs.FirstCode.GDDrinkCollectableObjects1});gdjs.FirstCode.eventsList17 = function(runtimeScene) {
 
 {
 
@@ -1618,7 +1640,7 @@ gdjs.copyArray(runtimeScene.getObjects("DrinkText"), gdjs.FirstCode.GDDrinkTextO
 }
 
 
-};gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDEndDoorObjects2Objects = Hashtable.newFrom({"EndDoor": gdjs.FirstCode.GDEndDoorObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDDeathCountObjects2Objects = Hashtable.newFrom({"DeathCount": gdjs.FirstCode.GDDeathCountObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDFoodCountObjects2Objects = Hashtable.newFrom({"FoodCount": gdjs.FirstCode.GDFoodCountObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDDrinksCountObjects2Objects = Hashtable.newFrom({"DrinksCount": gdjs.FirstCode.GDDrinksCountObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDPlayerObjects2Objects = Hashtable.newFrom({"Player": gdjs.FirstCode.GDPlayerObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDEndDoorObjects2Objects = Hashtable.newFrom({"EndDoor": gdjs.FirstCode.GDEndDoorObjects2});gdjs.FirstCode.eventsList17 = function(runtimeScene) {
+};gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDEndDoorObjects2Objects = Hashtable.newFrom({"EndDoor": gdjs.FirstCode.GDEndDoorObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDDeathCountObjects2Objects = Hashtable.newFrom({"DeathCount": gdjs.FirstCode.GDDeathCountObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDFoodCountObjects2Objects = Hashtable.newFrom({"FoodCount": gdjs.FirstCode.GDFoodCountObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDDrinksCountObjects2Objects = Hashtable.newFrom({"DrinksCount": gdjs.FirstCode.GDDrinksCountObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDPlayerObjects2Objects = Hashtable.newFrom({"Player": gdjs.FirstCode.GDPlayerObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDEndDoorObjects2Objects = Hashtable.newFrom({"EndDoor": gdjs.FirstCode.GDEndDoorObjects2});gdjs.FirstCode.eventsList18 = function(runtimeScene) {
 
 {
 
@@ -1662,7 +1684,7 @@ gdjs.copyArray(runtimeScene.getObjects("DemoEnd"), gdjs.FirstCode.GDDemoEndObjec
 }
 
 
-};gdjs.FirstCode.eventsList18 = function(runtimeScene) {
+};gdjs.FirstCode.eventsList19 = function(runtimeScene) {
 
 {
 
@@ -1787,13 +1809,13 @@ gdjs.copyArray(runtimeScene.getObjects("Score"), gdjs.FirstCode.GDScoreObjects2)
 }
 }
 { //Subevents
-gdjs.FirstCode.eventsList17(runtimeScene);} //End of subevents
+gdjs.FirstCode.eventsList18(runtimeScene);} //End of subevents
 }
 
 }
 
 
-};gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDBackToStartObjects2Objects = Hashtable.newFrom({"BackToStart": gdjs.FirstCode.GDBackToStartObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDBackToStartObjects2Objects = Hashtable.newFrom({"BackToStart": gdjs.FirstCode.GDBackToStartObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDBackToStartObjects1Objects = Hashtable.newFrom({"BackToStart": gdjs.FirstCode.GDBackToStartObjects1});gdjs.FirstCode.eventsList19 = function(runtimeScene) {
+};gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDBackToStartObjects2Objects = Hashtable.newFrom({"BackToStart": gdjs.FirstCode.GDBackToStartObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDBackToStartObjects2Objects = Hashtable.newFrom({"BackToStart": gdjs.FirstCode.GDBackToStartObjects2});gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDBackToStartObjects1Objects = Hashtable.newFrom({"BackToStart": gdjs.FirstCode.GDBackToStartObjects1});gdjs.FirstCode.eventsList20 = function(runtimeScene) {
 
 {
 
@@ -1823,7 +1845,7 @@ gdjs.FirstCode.condition3IsTrue_0.val = gdjs.evtTools.object.pickAllObjects(runt
 if (gdjs.FirstCode.condition3IsTrue_0.val) {
 
 { //Subevents
-gdjs.FirstCode.eventsList18(runtimeScene);} //End of subevents
+gdjs.FirstCode.eventsList19(runtimeScene);} //End of subevents
 }
 
 }
@@ -1885,7 +1907,7 @@ if (gdjs.FirstCode.condition1IsTrue_0.val) {
 }
 
 
-};gdjs.FirstCode.eventsList20 = function(runtimeScene) {
+};gdjs.FirstCode.eventsList21 = function(runtimeScene) {
 
 {
 
@@ -1966,6 +1988,15 @@ gdjs.FirstCode.eventsList2(runtimeScene);} //End of subevents
 {
 
 
+{
+}
+
+}
+
+
+{
+
+
 gdjs.FirstCode.condition0IsTrue_0.val = false;
 {
 gdjs.FirstCode.condition0IsTrue_0.val = gdjs.evtTools.input.isKeyPressed(runtimeScene, "Escape");
@@ -2009,21 +2040,11 @@ gdjs.FirstCode.condition0IsTrue_0.val = false;
 {
 gdjs.FirstCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDPlayerObjects1Objects, gdjs.FirstCode.mapOfGDgdjs_46FirstCode_46GDCheckpointZoneObjects1Objects, false, runtimeScene, false);
 }if (gdjs.FirstCode.condition0IsTrue_0.val) {
-gdjs.copyArray(runtimeScene.getObjects("Checkpoint"), gdjs.FirstCode.GDCheckpointObjects1);
-{runtimeScene.getVariables().get("CheckpointX").setNumber((( gdjs.FirstCode.GDCheckpointObjects1.length === 0 ) ? 0 :gdjs.FirstCode.GDCheckpointObjects1[0].getPointX("")));
-}{runtimeScene.getVariables().get("CheckpointY").setNumber((( gdjs.FirstCode.GDCheckpointObjects1.length === 0 ) ? 0 :gdjs.FirstCode.GDCheckpointObjects1[0].getPointY("")));
-}{for(var i = 0, len = gdjs.FirstCode.GDCheckpointObjects1.length ;i < len;++i) {
-    gdjs.FirstCode.GDCheckpointObjects1[i].setAnimationName("Passed");
-}
-}}
 
+{ //Subevents
+gdjs.FirstCode.eventsList3(runtimeScene);} //End of subevents
 }
 
-
-{
-
-
-gdjs.FirstCode.eventsList7(runtimeScene);
 }
 
 
@@ -2044,7 +2065,7 @@ gdjs.FirstCode.eventsList9(runtimeScene);
 {
 
 
-gdjs.FirstCode.eventsList13(runtimeScene);
+gdjs.FirstCode.eventsList10(runtimeScene);
 }
 
 
@@ -2072,6 +2093,13 @@ gdjs.FirstCode.eventsList16(runtimeScene);
 {
 
 
+gdjs.FirstCode.eventsList17(runtimeScene);
+}
+
+
+{
+
+
 
 }
 
@@ -2092,7 +2120,7 @@ gdjs.copyArray(runtimeScene.getObjects("DoorLight"), gdjs.FirstCode.GDDoorLightO
 {
 
 
-gdjs.FirstCode.eventsList19(runtimeScene);
+gdjs.FirstCode.eventsList20(runtimeScene);
 }
 
 
@@ -2366,7 +2394,7 @@ gdjs.FirstCode.GDCheckpointZoneObjects2.length = 0;
 gdjs.FirstCode.GDCheckpointZoneObjects3.length = 0;
 gdjs.FirstCode.GDCheckpointZoneObjects4.length = 0;
 
-gdjs.FirstCode.eventsList20(runtimeScene);
+gdjs.FirstCode.eventsList21(runtimeScene);
 return;
 
 }
