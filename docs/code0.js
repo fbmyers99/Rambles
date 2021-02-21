@@ -818,6 +818,8 @@ gdjs.FirstCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.
 gdjs.FirstCode.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 }}
 if (gdjs.FirstCode.condition1IsTrue_0.val) {
+gdjs.copyArray(runtimeScene.getObjects("BoatLantern"), gdjs.FirstCode.GDBoatLanternObjects2);
+gdjs.copyArray(runtimeScene.getObjects("BoatLanternTop"), gdjs.FirstCode.GDBoatLanternTopObjects2);
 gdjs.copyArray(runtimeScene.getObjects("Options"), gdjs.FirstCode.GDOptionsObjects2);
 /* Reuse gdjs.FirstCode.GDPlayObjects2 */
 gdjs.copyArray(runtimeScene.getObjects("Quit"), gdjs.FirstCode.GDQuitObjects2);
@@ -833,6 +835,12 @@ gdjs.copyArray(runtimeScene.getObjects("StartSign"), gdjs.FirstCode.GDStartSignO
 }
 }{for(var i = 0, len = gdjs.FirstCode.GDOptionsObjects2.length ;i < len;++i) {
     gdjs.FirstCode.GDOptionsObjects2[i].deleteFromScene(runtimeScene);
+}
+}{for(var i = 0, len = gdjs.FirstCode.GDBoatLanternObjects2.length ;i < len;++i) {
+    gdjs.FirstCode.GDBoatLanternObjects2[i].hide(false);
+}
+}{for(var i = 0, len = gdjs.FirstCode.GDBoatLanternTopObjects2.length ;i < len;++i) {
+    gdjs.FirstCode.GDBoatLanternTopObjects2[i].hide(false);
 }
 }}
 
@@ -1884,6 +1892,8 @@ gdjs.FirstCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.sceneJustBegi
 }if (gdjs.FirstCode.condition0IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("BackToStart"), gdjs.FirstCode.GDBackToStartObjects1);
 gdjs.copyArray(runtimeScene.getObjects("Barrier"), gdjs.FirstCode.GDBarrierObjects1);
+gdjs.copyArray(runtimeScene.getObjects("BoatLantern"), gdjs.FirstCode.GDBoatLanternObjects1);
+gdjs.copyArray(runtimeScene.getObjects("BoatLanternTop"), gdjs.FirstCode.GDBoatLanternTopObjects1);
 gdjs.copyArray(runtimeScene.getObjects("Close"), gdjs.FirstCode.GDCloseObjects1);
 gdjs.copyArray(runtimeScene.getObjects("DeathCount"), gdjs.FirstCode.GDDeathCountObjects1);
 gdjs.copyArray(runtimeScene.getObjects("DemoEnd"), gdjs.FirstCode.GDDemoEndObjects1);
@@ -1931,10 +1941,29 @@ gdjs.copyArray(runtimeScene.getObjects("StatsBoard"), gdjs.FirstCode.GDStatsBoar
 }{for(var i = 0, len = gdjs.FirstCode.GDBarrierObjects1.length ;i < len;++i) {
     gdjs.FirstCode.GDBarrierObjects1[i].hide();
 }
+}{for(var i = 0, len = gdjs.FirstCode.GDBoatLanternObjects1.length ;i < len;++i) {
+    gdjs.FirstCode.GDBoatLanternObjects1[i].hide();
+}
+}{for(var i = 0, len = gdjs.FirstCode.GDBoatLanternTopObjects1.length ;i < len;++i) {
+    gdjs.FirstCode.GDBoatLanternTopObjects1[i].hide();
+}
 }
 { //Subevents
 gdjs.FirstCode.eventsList2(runtimeScene);} //End of subevents
 }
+
+}
+
+
+{
+
+
+gdjs.FirstCode.condition0IsTrue_0.val = false;
+{
+gdjs.FirstCode.condition0IsTrue_0.val = gdjs.evtTools.input.isKeyPressed(runtimeScene, "Escape");
+}if (gdjs.FirstCode.condition0IsTrue_0.val) {
+{gdjs.evtTools.runtimeScene.pushScene(runtimeScene, "First");
+}}
 
 }
 
