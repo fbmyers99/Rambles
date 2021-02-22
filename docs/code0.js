@@ -1,4 +1,8 @@
 gdjs.FirstCode = {};
+gdjs.FirstCode.GDBackgroundObjects1= [];
+gdjs.FirstCode.GDBackgroundObjects2= [];
+gdjs.FirstCode.GDBackgroundObjects3= [];
+gdjs.FirstCode.GDBackgroundObjects4= [];
 gdjs.FirstCode.GDStatsTabObjects1= [];
 gdjs.FirstCode.GDStatsTabObjects2= [];
 gdjs.FirstCode.GDStatsTabObjects3= [];
@@ -11,6 +15,10 @@ gdjs.FirstCode.GDCloseObjects1= [];
 gdjs.FirstCode.GDCloseObjects2= [];
 gdjs.FirstCode.GDCloseObjects3= [];
 gdjs.FirstCode.GDCloseObjects4= [];
+gdjs.FirstCode.GDRespawnObjects1= [];
+gdjs.FirstCode.GDRespawnObjects2= [];
+gdjs.FirstCode.GDRespawnObjects3= [];
+gdjs.FirstCode.GDRespawnObjects4= [];
 gdjs.FirstCode.GDDeathCountObjects1= [];
 gdjs.FirstCode.GDDeathCountObjects2= [];
 gdjs.FirstCode.GDDeathCountObjects3= [];
@@ -95,6 +103,10 @@ gdjs.FirstCode.GDClimbSignObjects1= [];
 gdjs.FirstCode.GDClimbSignObjects2= [];
 gdjs.FirstCode.GDClimbSignObjects3= [];
 gdjs.FirstCode.GDClimbSignObjects4= [];
+gdjs.FirstCode.GDExitSignObjects1= [];
+gdjs.FirstCode.GDExitSignObjects2= [];
+gdjs.FirstCode.GDExitSignObjects3= [];
+gdjs.FirstCode.GDExitSignObjects4= [];
 gdjs.FirstCode.GDEndSignObjects1= [];
 gdjs.FirstCode.GDEndSignObjects2= [];
 gdjs.FirstCode.GDEndSignObjects3= [];
@@ -103,6 +115,10 @@ gdjs.FirstCode.GDCheckpointObjects1= [];
 gdjs.FirstCode.GDCheckpointObjects2= [];
 gdjs.FirstCode.GDCheckpointObjects3= [];
 gdjs.FirstCode.GDCheckpointObjects4= [];
+gdjs.FirstCode.GDCheckpointZoneObjects1= [];
+gdjs.FirstCode.GDCheckpointZoneObjects2= [];
+gdjs.FirstCode.GDCheckpointZoneObjects3= [];
+gdjs.FirstCode.GDCheckpointZoneObjects4= [];
 gdjs.FirstCode.GDWaterObjects1= [];
 gdjs.FirstCode.GDWaterObjects2= [];
 gdjs.FirstCode.GDWaterObjects3= [];
@@ -207,10 +223,6 @@ gdjs.FirstCode.GDDoorLightObjects1= [];
 gdjs.FirstCode.GDDoorLightObjects2= [];
 gdjs.FirstCode.GDDoorLightObjects3= [];
 gdjs.FirstCode.GDDoorLightObjects4= [];
-gdjs.FirstCode.GDBackgroundObjects1= [];
-gdjs.FirstCode.GDBackgroundObjects2= [];
-gdjs.FirstCode.GDBackgroundObjects3= [];
-gdjs.FirstCode.GDBackgroundObjects4= [];
 gdjs.FirstCode.GDKeyObjects1= [];
 gdjs.FirstCode.GDKeyObjects2= [];
 gdjs.FirstCode.GDKeyObjects3= [];
@@ -259,14 +271,6 @@ gdjs.FirstCode.GDBackToStartObjects1= [];
 gdjs.FirstCode.GDBackToStartObjects2= [];
 gdjs.FirstCode.GDBackToStartObjects3= [];
 gdjs.FirstCode.GDBackToStartObjects4= [];
-gdjs.FirstCode.GDCheckpointZoneObjects1= [];
-gdjs.FirstCode.GDCheckpointZoneObjects2= [];
-gdjs.FirstCode.GDCheckpointZoneObjects3= [];
-gdjs.FirstCode.GDCheckpointZoneObjects4= [];
-gdjs.FirstCode.GDRespawnObjects1= [];
-gdjs.FirstCode.GDRespawnObjects2= [];
-gdjs.FirstCode.GDRespawnObjects3= [];
-gdjs.FirstCode.GDRespawnObjects4= [];
 
 gdjs.FirstCode.conditionTrue_0 = {val:false};
 gdjs.FirstCode.condition0IsTrue_0 = {val:false};
@@ -969,7 +973,7 @@ gdjs.FirstCode.condition1IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.
 }if ( gdjs.FirstCode.condition1IsTrue_0.val ) {
 {
 {gdjs.FirstCode.conditionTrue_1 = gdjs.FirstCode.condition2IsTrue_0;
-gdjs.FirstCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8291172);
+gdjs.FirstCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9209524);
 }
 }}
 }
@@ -1060,7 +1064,7 @@ gdjs.FirstCode.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonPressed
 }if ( gdjs.FirstCode.condition1IsTrue_0.val ) {
 {
 {gdjs.FirstCode.conditionTrue_1 = gdjs.FirstCode.condition2IsTrue_0;
-gdjs.FirstCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(7921588);
+gdjs.FirstCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9213924);
 }
 }}
 }
@@ -2260,6 +2264,10 @@ gdjs.FirstCode.eventsList23(runtimeScene);
 gdjs.FirstCode.func = function(runtimeScene) {
 runtimeScene.getOnceTriggers().startNewFrame();
 
+gdjs.FirstCode.GDBackgroundObjects1.length = 0;
+gdjs.FirstCode.GDBackgroundObjects2.length = 0;
+gdjs.FirstCode.GDBackgroundObjects3.length = 0;
+gdjs.FirstCode.GDBackgroundObjects4.length = 0;
 gdjs.FirstCode.GDStatsTabObjects1.length = 0;
 gdjs.FirstCode.GDStatsTabObjects2.length = 0;
 gdjs.FirstCode.GDStatsTabObjects3.length = 0;
@@ -2272,6 +2280,10 @@ gdjs.FirstCode.GDCloseObjects1.length = 0;
 gdjs.FirstCode.GDCloseObjects2.length = 0;
 gdjs.FirstCode.GDCloseObjects3.length = 0;
 gdjs.FirstCode.GDCloseObjects4.length = 0;
+gdjs.FirstCode.GDRespawnObjects1.length = 0;
+gdjs.FirstCode.GDRespawnObjects2.length = 0;
+gdjs.FirstCode.GDRespawnObjects3.length = 0;
+gdjs.FirstCode.GDRespawnObjects4.length = 0;
 gdjs.FirstCode.GDDeathCountObjects1.length = 0;
 gdjs.FirstCode.GDDeathCountObjects2.length = 0;
 gdjs.FirstCode.GDDeathCountObjects3.length = 0;
@@ -2356,6 +2368,10 @@ gdjs.FirstCode.GDClimbSignObjects1.length = 0;
 gdjs.FirstCode.GDClimbSignObjects2.length = 0;
 gdjs.FirstCode.GDClimbSignObjects3.length = 0;
 gdjs.FirstCode.GDClimbSignObjects4.length = 0;
+gdjs.FirstCode.GDExitSignObjects1.length = 0;
+gdjs.FirstCode.GDExitSignObjects2.length = 0;
+gdjs.FirstCode.GDExitSignObjects3.length = 0;
+gdjs.FirstCode.GDExitSignObjects4.length = 0;
 gdjs.FirstCode.GDEndSignObjects1.length = 0;
 gdjs.FirstCode.GDEndSignObjects2.length = 0;
 gdjs.FirstCode.GDEndSignObjects3.length = 0;
@@ -2364,6 +2380,10 @@ gdjs.FirstCode.GDCheckpointObjects1.length = 0;
 gdjs.FirstCode.GDCheckpointObjects2.length = 0;
 gdjs.FirstCode.GDCheckpointObjects3.length = 0;
 gdjs.FirstCode.GDCheckpointObjects4.length = 0;
+gdjs.FirstCode.GDCheckpointZoneObjects1.length = 0;
+gdjs.FirstCode.GDCheckpointZoneObjects2.length = 0;
+gdjs.FirstCode.GDCheckpointZoneObjects3.length = 0;
+gdjs.FirstCode.GDCheckpointZoneObjects4.length = 0;
 gdjs.FirstCode.GDWaterObjects1.length = 0;
 gdjs.FirstCode.GDWaterObjects2.length = 0;
 gdjs.FirstCode.GDWaterObjects3.length = 0;
@@ -2468,10 +2488,6 @@ gdjs.FirstCode.GDDoorLightObjects1.length = 0;
 gdjs.FirstCode.GDDoorLightObjects2.length = 0;
 gdjs.FirstCode.GDDoorLightObjects3.length = 0;
 gdjs.FirstCode.GDDoorLightObjects4.length = 0;
-gdjs.FirstCode.GDBackgroundObjects1.length = 0;
-gdjs.FirstCode.GDBackgroundObjects2.length = 0;
-gdjs.FirstCode.GDBackgroundObjects3.length = 0;
-gdjs.FirstCode.GDBackgroundObjects4.length = 0;
 gdjs.FirstCode.GDKeyObjects1.length = 0;
 gdjs.FirstCode.GDKeyObjects2.length = 0;
 gdjs.FirstCode.GDKeyObjects3.length = 0;
@@ -2520,14 +2536,6 @@ gdjs.FirstCode.GDBackToStartObjects1.length = 0;
 gdjs.FirstCode.GDBackToStartObjects2.length = 0;
 gdjs.FirstCode.GDBackToStartObjects3.length = 0;
 gdjs.FirstCode.GDBackToStartObjects4.length = 0;
-gdjs.FirstCode.GDCheckpointZoneObjects1.length = 0;
-gdjs.FirstCode.GDCheckpointZoneObjects2.length = 0;
-gdjs.FirstCode.GDCheckpointZoneObjects3.length = 0;
-gdjs.FirstCode.GDCheckpointZoneObjects4.length = 0;
-gdjs.FirstCode.GDRespawnObjects1.length = 0;
-gdjs.FirstCode.GDRespawnObjects2.length = 0;
-gdjs.FirstCode.GDRespawnObjects3.length = 0;
-gdjs.FirstCode.GDRespawnObjects4.length = 0;
 
 gdjs.FirstCode.eventsList24(runtimeScene);
 return;
